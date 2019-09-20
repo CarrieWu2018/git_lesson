@@ -1,9 +1,8 @@
 library(dplyr)
-
-# split - apply - combine
-
 library(ggplot2)
 
+# split - apply - combine, a typical approach in R for data analysis
+# piping concept and examples
 data(diamonds, package='ggplot2')
 diamonds
 
