@@ -5,7 +5,7 @@ install.packages("tidyr")
 # purrr
 # tidyr
 # dplyr
-
+# indicate which package the function belongs to be clear to readers
 reaction <- readr::read_tsv('data/reaction.txt')
 
 # flat into long form
