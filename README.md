@@ -1,2 +1,2 @@
 This repository contains the files used for a git lesson
-change 1 occurred
+There are R code and Python code
