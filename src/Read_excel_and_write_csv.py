@@ -50,9 +50,8 @@ def get_fees_from_file(loc:str) ->list:
 
 
 if __name__=='__main__':
-    spath =("P:/Back Office/Back Office Internet Projects/10183_C1_Production\
-_support/CHIOPS-1287 Access fee billing impact from Feb 2018 till May 2019/")
-    sname ="MM Permit by SPX OO monthly.xlsx"
+    spath =("../data/")
+    sname ="monthly.xlsx"
     sloc = os.path.join(spath, sname)
     print(sloc)
     ym_seats = get_seats(sloc)
@@ -119,7 +118,7 @@ for file_i in range(2): #nbr_files):
 #            print(file_i, i, row[9], row[6])
             charged.append(row)
     
-with open('charged_seats_usedby_OO_SPX.csv', 'w') as f:
+with open('output_OO.csv', 'w') as f:
     for item in charged:
         if type(item) == list:
             for col in (item):
